@@ -1,0 +1,100 @@
+
+.chart-content {
+    -fx-background-color: #2E313C;
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+}
+
+.chart-legend-item {
+    -fx-text-fill: #fff;
+}
+
+.default-color0.chart-series-line {
+  -fx-stroke: #E43264;
+}
+.default-color0.chart-line-symbol {
+  -fx-background-color: #E43264;
+  -fx-background-radius: 50;
+}
+
+.default-color1.chart-series-line {
+  -fx-stroke: #00A991;
+}
+.default-color1.chart-line-symbol {
+  -fx-background-color: #00A991;
+  -fx-background-radius: 50;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: #3D3F49;
+}
+
+.chart-horizontal-grid-lines {
+    -fx-stroke: #3D3F49;
+}
+
+.chart-alternative-row-fill {
+    -fx-background-color: #444;
+}
+
+.chart-alternative-column-fill {
+    -fx-background-color: #444;
+}
+.axis-zero-line {
+    -fx-stroke: #585A62;
+}
+.axis-minor-tick-mark {
+    -fx-stroke: #585A62;
+}
+.axis-major-tick-mark {
+    -fx-stroke: #585A62;
+}
+.chart-x-axis, .chart-y-axis {
+    -fx-tick-label-fill:  #585A62;
+    -fx-minor-tick-mark-color: #585A62;
+    -fx-major-tick-mark-color: #585A62;
+}
+.chart-title {
+    -fx-text-fill: #585A62;
+    -fx-font-size: 18px;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar {
+    -fx-background-color: #2E313C;
+    -fx-border-style: none;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #393D49;
+}
+
+#createdPane {
+    -fx-background-image: url("../img/createdMetric.png");
+    -fx-background-radius: 15;
+}
+
+#donePane {
+    -fx-background-image: url("../img/doneMetric.png");
+    -fx-background-radius: 15;
+}
+
+#deletedPane {
+    -fx-background-image: url("../img/deletedMetric.png");
+    -fx-background-radius: 15;
+}
+

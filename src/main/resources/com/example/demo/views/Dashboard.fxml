@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #292B32;" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.DashboardController">
+   <children>
+      <Pane layoutX="-10.0" layoutY="-12.0" prefHeight="1142.0" prefWidth="382.0" style="-fx-border-color: #626262;">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="113.0" layoutY="504.0">
+               <image>
+                  <Image url="@../img/todo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="113.0" layoutY="605.0">
+               <image>
+                  <Image url="@../img/clock.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="129.0" layoutY="947.0">
+               <image>
+                  <Image url="@../img/logout.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="35.0" layoutX="111.0" layoutY="706.0">
+               <image>
+                  <Image url="@../img/done.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="logOut" layoutX="157.0" layoutY="939.0" style="-fx-text-fill: #00A991;" text="Log out">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="todosPageLink" layoutX="161.0" layoutY="500.0" style="-fx-text-fill: #B0E4DD;" text="Todos">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="RecentPageLink" layoutX="161.0" layoutY="599.0" style="-fx-text-fill: #B0E4DD;" text="Recent">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="donePageLink" layoutX="162.0" layoutY="701.0" style="-fx-text-fill: #B0E4DD;" text="Done">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Hyperlink>
+            <VBox fx:id="userInfoContainer" layoutX="81.0" layoutY="122.0" prefHeight="236.0" prefWidth="216.0">
+               <children>
+                  <ImageView fitHeight="128.0" fitWidth="132.0">
+                     <image>
+                        <Image url="@../img/userPfp.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="userName" style="-fx-text-fill: #B0E4DD;">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="userEmail" style="-fx-text-fill: #848484;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Hyperlink fx:id="dashboardPageLink" layoutX="162.0" layoutY="409.0" style="-fx-text-fill: #B0E4DD;" text="Dashboard">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Hyperlink>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="116.0" layoutY="413.0">
+               <image>
+                  <Image url="@../img/dashboard.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="appBackground" layoutX="372.0" layoutY="-9.0" prefHeight="1130.0" prefWidth="1552.0">
+         <children>
+            <AnchorPane fx:id="rootContainer" layoutX="142.0" layoutY="160.0" prefHeight="960.0" prefWidth="1201.0">
+               <children>
+                  <VBox fx:id="viewsContainer" layoutX="-2.0" layoutY="-6.0" prefHeight="964.0" prefWidth="1202.0" />
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

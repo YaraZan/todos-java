@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="1128.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #292B32;" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AuthController">
+   <children>
+      <TextField fx:id="authLogin" layoutX="782.0" layoutY="439.0" prefHeight="52.0" prefWidth="357.0" promptText="Login" style="-fx-background-color: #2E313B; -fx-background-radius: 15deg; -fx-text-fill: #B0E4DD;" styleClass="auth-input">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <PasswordField fx:id="authPassword" layoutX="782.0" layoutY="503.0" prefHeight="52.0" prefWidth="357.0" promptText="Password" style="-fx-background-color: #2E313B; -fx-background-radius: 15deg; -fx-text-fill: #B0E4DD;" styleClass="auth-input">
+         <font>
+            <Font size="14.0" />
+         </font></PasswordField>
+      <Label layoutX="909.0" layoutY="374.0" prefHeight="46.0" prefWidth="106.0" styleClass="logo" text="Sign in" textFill="#00a991">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font></Label>
+      <Button fx:id="signIn" layoutX="784.0" layoutY="576.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="357.0" style="-fx-background-color: #00A991; -fx-background-radius: 15; -fx-text-fill: #ffffff;" styleClass="auth-button" text="Sign in">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="935.0" layoutY="324.0">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="815.0" layoutY="643.0" style="-fx-text-fill: #707075;" text="Dont have an account yet?">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="switchReg" layoutX="1019.0" layoutY="639.0" style="-fx-text-fill: #B0E4DD;" text="Sign up">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Hyperlink>
+      <Label fx:id="validationHint" layoutX="931.0" layoutY="691.0" prefHeight="17.0" prefWidth="64.0" />
+   </children>
+</AnchorPane>
